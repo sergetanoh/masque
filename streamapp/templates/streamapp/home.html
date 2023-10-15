@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Video Live Stream</title>
+    <!-- Ajouter le lien vers Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+    <style>
+      /* Styles CSS personnalisés pour personnaliser davantage la page */
+      body {
+        background-color: #f8f9fa; /* Couleur de fond gris clair */
+      }
+
+      h1 {
+        color: #007bff; /* Couleur du texte bleu */
+      }
+    </style>
+  </head>
+  <body class="container mt-5">
+    <h1 class="text-center">Video en direct de l'Université de Technologie Abidjan</h1>
+
+    <!-- Utilisation de Bootstrap pour améliorer la mise en page -->
+    <div class="row justify-content-center mt-4">
+      <div class="col-12 col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <img src="{% url 'mask_feed' %}" class="img-fluid" id="videoContainer">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
